@@ -1,0 +1,21 @@
+
+Either route will create the branch on GitHub and set it as the default upstream for future `git push` / `git pull`.
+
+---
+
+### (Optional but recommended) tidy-ups before the first push
+
+1. **Add a `.gitignore`** so the repository isn’t bloated by build artifacts and executables. For a PyQt + PyInstaller project, something like:
+
+   ```gitignore
+   # Python
+   __pycache__/
+   *.py[cod]
+   *.pyd
+   # Build / dist folders
+   build/
+   dist/
+   *.spec
+   # IDE / OS clutter
+   .vscode/
+   *.DS_Store
